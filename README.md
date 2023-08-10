@@ -5,6 +5,9 @@ Extension that automatically sets start time of any YouTube video to 0:00. This 
 **Work in progress** this extension is more annoying now than useful.
 
 ## Installation
+
+Clone this repository and follow steps bellow.
+
 ### Chrome
 
 Go to *chrome://extensions* and enable developer mode in top right corner.
