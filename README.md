@@ -18,4 +18,4 @@ The extension has been installed and should work now
 
 Go to *about:addons*, click on **Extensions** in the left menu. Then click on the cog icon on the right of **Manage Your Extensions**.
 Select **Debug Add-ons**, click on **Load Temporary Add-on...**\
-Navigate to this file and select *manifest.json*
+Navigate to this folder and select *manifest.json*
