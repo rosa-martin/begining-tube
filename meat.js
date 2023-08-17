@@ -12,7 +12,6 @@ function setToZero(){
             window.location.href = newUrl;
             return;
         }
-
         
     }
     
@@ -21,7 +20,7 @@ function setToZero(){
 function addLocationObserver(callback){
     let conf = { attributes: false, childList: true, subtree: false };
     const observer = new MutationObserver(callback);
-    observer.observe(document.body, conf);
+    observer.observe(document, conf);
 }
 
 function leCallback(){
