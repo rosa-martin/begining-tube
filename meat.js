@@ -1,12 +1,19 @@
 function setToZero(){
+
     let url = window.location.href;
     const reg = /&t=\d+s/;
     
     if(url.includes("&t=") && !url.includes("&t=0s")){
-        
-        let newUrl = url.replace(reg, "&t=0s");
+        let choice = confirm("Start the video at 0:00?");
+
+        if(choice){
+            let newUrl = url.replace(reg, "&t=0s");
     
-        window.location.href = newUrl;
+            window.location.href = newUrl;
+            return;
+        }
+
+        
     }
     
 }
