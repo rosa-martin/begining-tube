@@ -1,4 +1,4 @@
-function setToZero(){
+window.onload = function setToZero(){
 
     let url = window.location.href;
     const reg = /&t=\d+s/;
@@ -17,19 +17,18 @@ function setToZero(){
     
 }
 
-function addLocationObserver(callback){
-    let conf = { attributes: false, childList: true, subtree: false };
-    const observer = new MutationObserver(callback);
-    observer.observe(document, conf);
-}
-
-function leCallback(){
-    if(window.location.href.startsWith("https://www.youtube.com/")){
-        setToZero();
-    }
-        
-}
-
-addLocationObserver(leCallback);
-leCallback();
-
+//function addLocationObserver(callback){
+//    let conf = { attributes: false, childList: true, subtree: false };
+//    const observer = new MutationObserver(callback);
+//    observer.observe(document, conf);
+//}
+//
+//function leCallback(){
+//    if(window.location.href.startsWith("https://www.youtube.com/")){
+//        setToZero();
+//    }
+//        
+//}
+//
+//addLocationObserver(leCallback);
+//leCallback();
